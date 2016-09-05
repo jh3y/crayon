@@ -28,7 +28,7 @@ compile-markup: ## compiles markup
 	$(PUG) src/markup/index.pug -o $(OUTPUT_DIR)
 
 setup: ## set up project for development
-	npm install & mkdir -pv public
+	npm install && mkdir -pv public
 
 watch: ## run development watch
 	make watch-style

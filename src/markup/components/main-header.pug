@@ -8,19 +8,19 @@ header.main-header
   nav#secondary-primary-nav.header-chunk.primary-nav.fill-space.priority-nav.show-more-text(style='overflow: visible;')
     ul(style='white-space: nowrap;')
       li#primary-nav-pens.primary.primary-pens
-        a(href='/pens/') Pens
+        a Pens
       li.primary.primary-posts
-        a(href='/posts/') Posts
+        a Posts
       li.primary.primary-collections.primary-last
-        a(href='/collections/') Collections
+        a Collections
       li.primary-jobs
-        a(href='/jobs/') Jobs
+        a Jobs
       li.primary-blog
-        a(href='http://blog.codepen.io/') Blog
+        a Blog
       li.primary-store
-        a(href='http://blog.codepen.io/store/') Store
+        a Store
       li.primary-pro
-        a(href='/pro/')
+        a
           | Go
           span.badge.badge-pro PRO
       li.overflow-nav.show-inline-block
@@ -31,19 +31,19 @@ header.main-header
               use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#arrow-down-mini')
           ul.overflow-nav-list.link-list.priority-nav__dropdown(style='white-space: nowrap;')
             li#primary-nav-pens.primary.primary-pens
-              a(href='/pens/') Pens
+              a Pens
             li.primary.primary-posts
-              a(href='/posts/') Posts
+              a Posts
             li.primary.primary-collections.primary-last
-              a(href='/collections/') Collections
+              a Collections
             li.primary-jobs
-              a(href='/jobs/') Jobs
+              a Jobs
             li.primary-blog
-              a(href='http://blog.codepen.io/') Blog
+              a Blog
             li.primary-store
-              a(href='http://blog.codepen.io/store/') Store
+              a Store
             li.primary-pro
-              a(href='/pro/')
+              a
                 | Go
                 span.badge.badge-pro PRO
   .header-chunk.primary-actions
@@ -55,7 +55,7 @@ header.main-header
       button#templates-dropdown.button.button-medium.dropdown-divider(data-dropdown='#pen-templates-dropdown')
         svg.dropdown-arrow
           use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#arrow-down-mini')
-    a#new.button.button-medium.new-post-button(href='/write/')
+    a#new.button.button-medium.new-post-button
       span.icon
         | +
       |       New Post
@@ -74,33 +74,27 @@ header.main-header
       a(href='/write/')
         | New Post
     li.dropdown-activity
-      a(href='/jh3y/activity/')
-        | Recent Activity
+      a Recent Activity
     li.dropdown-embedbuilder
-      a(href='/jh3y/embed/builder/public/')
-        | Embed Theme Builder
+      a Embed Theme Builder
     li.dropdown-yoursettings
-      a(href='/jh3y/settings/editor/')
-        | Settings
+      a Settings
     li.dropdown-help
-      a(href='http://blog.codepen.io/documentation/')
-        | Help
+      a Help
     li.dropdown-logout.sep-after
-      a#logout(href='/logout')
-        | Log Out
+      a#logout Log Out
     li.dropdown-profile
-      a(href='/jh3y/')
-        | Your Profile
+      a Your Profile
       .user-dropdown-quicklink-row
-        a(href='/jh3y/pens/public/') Pens
-        a(href='/jh3y/posts/published/') Posts
-        a(href='/jh3y/collections/') Collections
+        a Pens
+        a Posts
+        a Collections
   #header-search.header-search.header-chunk
     a#header-search-button.header-search-button(href='#0')
       svg.header-icon-mag(width='25px', height='65px')
         use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#mag')
   #header-activity-div.header-activity.header-chunk
-    a.header-activity-button(href='/jh3y/activity/', data-dropdown='#activity-dropdown')
+    a.header-activity-button(data-dropdown='#activity-dropdown')
       svg.activity-icon(width='25px', height='65px')
         use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#activity')
     #activity-dropdown.activity-dropdown.is-dropdown
