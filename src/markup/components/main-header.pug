@@ -1,0 +1,102 @@
+header.main-header
+  h1.logo.header-chunk
+    a.small-screen-logo(href='http://codepen.io/')
+      svg.icon-codepen-box
+        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#codepen-box')
+    a.large-screen-logo(href='http://codepen.io/')
+      | CodePen
+  nav#secondary-primary-nav.header-chunk.primary-nav.fill-space.priority-nav.show-more-text(style='overflow: visible;')
+    ul(style='white-space: nowrap;')
+      li#primary-nav-pens.primary.primary-pens.hide
+        a(href='/pens/') Pens
+      li.primary.primary-posts.hide
+        a(href='/posts/') Posts
+      li.primary.primary-collections.primary-last.hide
+        a(href='/collections/') Collections
+      li.primary-jobs.hide
+        a(href='/jobs/') Jobs
+      li.primary-blog.hide
+        a(href='http://blog.codepen.io/') Blog
+      li.primary-store.hide
+        a(href='http://blog.codepen.io/store/') Store
+      li.primary-pro.hide
+        a(href='/pro/')
+          | Go
+          span.badge.badge-pro PRO
+      li.overflow-nav.show-inline-block
+        span#overflow-nav-menu-link
+          span.primary-nav-more Menu
+          span.overflow-nav-title
+            svg.dropdown-arrow
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#arrow-down-mini')
+          ul.overflow-nav-list.link-list.priority-nav__dropdown(style='white-space: nowrap;')
+            li#primary-nav-pens.primary.primary-pens
+              a(href='/pens/') Pens
+            li.primary.primary-posts
+              a(href='/posts/') Posts
+            li.primary.primary-collections.primary-last
+              a(href='/collections/') Collections
+            li.primary-jobs
+              a(href='/jobs/') Jobs
+            li.primary-blog
+              a(href='http://blog.codepen.io/') Blog
+            li.primary-store
+              a(href='http://blog.codepen.io/store/') Store
+            li.primary-pro
+              a(href='/pro/')
+                | Go
+                span.badge.badge-pro PRO
+  .header-chunk.primary-actions
+    .multi-button.new-pen-button
+      a.button.button-medium.new-pen-button(href='http://codepen.io/pen/')
+        span.icon
+          | +
+        |         New Pen
+      button#templates-dropdown.button.button-medium.dropdown-divider(data-dropdown='#pen-templates-dropdown')
+        svg.dropdown-arrow
+          use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#arrow-down-mini')
+    a#new.button.button-medium.new-post-button(href='/write/')
+      span.icon
+        | +
+      |       New Post
+  #pen-templates-dropdown.pen-templates-dropdown.is-dropdown.link-list
+  #user-header-dropdown.user-stuff.header-chunk
+    img#mini-personal-avatar.user-avatar(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/605876/profile/profile-80_5.jpg', width='44', height='44', alt='User Menu', data-dropdown='#user-dropdown')
+  ul#user-dropdown.user-dropdown.link-list.is-dropdown
+    li.dropdown-newpen
+      a(href='/pen/')
+        | New Pen
+    li.dropdown-newpost
+      a(href='/write/')
+        | New Post
+    li.dropdown-activity
+      a(href='/jh3y/activity/')
+        | Recent Activity
+    li.dropdown-embedbuilder
+      a(href='/jh3y/embed/builder/public/')
+        | Embed Theme Builder
+    li.dropdown-yoursettings
+      a(href='/jh3y/settings/editor/')
+        | Settings
+    li.dropdown-help
+      a(href='http://blog.codepen.io/documentation/')
+        | Help
+    li.dropdown-logout.sep-after
+      a#logout(href='/logout')
+        | Log Out
+    li.dropdown-profile
+      a(href='/jh3y/')
+        | Your Profile
+      .user-dropdown-quicklink-row
+        a(href='/jh3y/pens/public/') Pens
+        a(href='/jh3y/posts/published/') Posts
+        a(href='/jh3y/collections/') Collections
+  #header-search.header-search.header-chunk
+    a#header-search-button.header-search-button(href='#0')
+      svg.header-icon-mag(width='25px', height='65px')
+        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#mag')
+  #header-activity-div.header-activity.header-chunk
+    a.header-activity-button(href='/jh3y/activity/', data-dropdown='#activity-dropdown')
+      svg.activity-icon(width='25px', height='65px')
+        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#activity')
+    #activity-dropdown.activity-dropdown.is-dropdown

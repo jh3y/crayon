@@ -1,0 +1,16 @@
+nav.explore-tabs.profile-nav.profile-nav-1
+  .width-wrapper
+    a.active(href='/jh3y/') Pens
+    a(href='/jh3y/posts/') Posts
+    a(href='/jh3y/collections/') Collections
+    #profile-search.profile-search
+      form#profile-search-form.search-form.group(method='get', action='/search/pens')
+        #search-elements-div
+          .group
+            label.screen-reader-text(for='q') Search
+            input#profile-search-q.search-input(type='search', name='q', required='true', value='', placeholder='Search Your Pens...')
+            input(type='hidden', name='limit', value='mine')
+            input.button.search-button.visually-hidden(type='submit', value='Search')
+  span.mobile-trigger
+    svg.icon-menu
+      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#menu')

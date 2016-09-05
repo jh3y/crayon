@@ -1,0 +1,22 @@
+#header-search-form-wrap.header-search-form
+  form#search-form.search-form.group(method='get', action='/search/pens')
+    #search-elements-div
+      .group
+        label.screen-reader-text(for='q') Search
+        input#q.search-input(type='search', name='q', required='true', value='', placeholder='Search')
+        input(type='hidden', name='limit', value='all')
+        input.button.search-button.visually-hidden(type='submit', value='Search')
+      #advanced-options.advanced-options.group.flex-grid(data-grid-type='fill')
+        .search-option.search-option-radio-row
+          div
+            input#type-pens(name='type', type='radio', value='type-pens', checked='')
+            label(for='type-pens') Pens
+          div
+            input#type-posts(name='type', type='radio', value='type-posts')
+            label(for='type-posts') Posts
+          div
+            input#type-collections(name='type', type='radio', value='type-collections')
+            label(for='type-collections') Collections
+          div
+            input#type-users(name='type', type='radio', value='type-users')
+            label(for='type-users') Users
