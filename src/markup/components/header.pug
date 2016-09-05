@@ -1,1 +1,186 @@
-header header
+header.main-header
+  h1.logo.header-chunk
+    a.small-screen-logo
+      svg.icon-codepen-box
+        use(xlink:href='#codepen-box')
+    a.large-screen-logo CodePen
+  nav#secondary-primary-nav.header-chunk.primary-nav.fill-space.priority-nav
+    ul
+      li#primary-nav-pens.primary.primary-pens
+        a Pens
+      li.primary.primary-posts
+        a Posts
+      li.primary.primary-collections.primary-last
+        a Collections
+      li.primary-jobs
+        a Jobs
+      li.primary-blog
+        a Blog
+      li.primary-store
+        a Store
+      li.primary-pro
+        a
+          | Go
+          span.badge.badge-pro PRO
+      li.overflow-nav
+        span#overflow-nav-menu-link
+          span.primary-nav-more Menu
+          span.overflow-nav-title
+            svg.dropdown-arrow
+              use(xlink:href='#arrow-down-mini')
+          ul.overflow-nav-list.link-list.priority-nav__dropdown
+  .header-chunk.primary-actions
+    .multi-button.new-pen-button
+      a.button.button-medium.new-pen-button
+        span.icon
+          | +
+        |         New Pen
+      button#templates-dropdown.button.button-medium.dropdown-divider(data-dropdown='#pen-templates-dropdown')
+        svg.dropdown-arrow
+          use(xlink:href='#arrow-down-mini')
+    a#new.button.button-medium.new-post-button
+      span.icon
+        | +
+      |       New Post
+  #pen-templates-dropdown.pen-templates-dropdown.is-dropdown.link-list
+    h3 New Pen from Template
+    ul
+      li
+        a(href='/pen/') You have no templates yet. Let's go make one!
+  #user-header-dropdown.user-stuff.header-chunk
+    img#mini-personal-avatar.user-avatar(width="44", height="44", style="background: #eee; height: 44px", data-dropdown="#user-dropdown")
+  ul#user-dropdown.user-dropdown.link-list.is-dropdown
+    li.dropdown-newpen
+      a
+        | New Pen
+    li.dropdown-newpost
+      a
+        | New Post
+    li.dropdown-activity
+      a
+        | Recent Activity
+    li.dropdown-embedbuilder
+      a
+        | Embed Theme Builder
+    li.dropdown-yoursettings
+      a
+        | Settings
+    li.dropdown-help
+      a
+        | Help
+    li.dropdown-logout.sep-after
+      a#logout
+        | Log Out
+    li.dropdown-profile
+      a
+        | Your Profile
+      .user-dropdown-quicklink-row
+        a Pens
+        a Posts
+        a Collections
+  #header-search.header-search.header-chunk
+    a#header-search-button.header-search-button(href='#0')
+      svg.header-icon-mag(width='25px', height='65px')
+        use(xlink:href='#mag')
+  #header-activity-div.header-activity.header-chunk
+    a.header-activity-button(href='/jh3y/activity/', data-dropdown='#activity-dropdown')
+      svg.activity-icon(width='25px', height='65px')
+        use(xlink:href='#activity')
+    #activity-dropdown.activity-dropdown.is-dropdown
+      .recent-activity-widget.group
+        ul.activity-list
+          //- Follow
+          li.activity.activity-follow.activity-type-social.activity-you
+            p.activity-sentence.wrap-text
+              a.activity-name
+                | Some User
+              span.activity-action followed
+              strong.activity-thing you
+              svg.icon-user
+                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#user')
+            time.activity-date
+              | 1 day ago
+          //- Hearted
+          li.activity.activity-love.activity-type-social.activity-you
+            p.activity-sentence.wrap-text
+              a.activity-name
+                | Some User
+              span.activity-action hearted
+              | your
+              | Pen
+              a.activity-thing
+                | Some awesome pen
+              svg.icon-heart
+                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#heart')
+            time.activity-date
+              | 2 hours ago
+          //- Add to collection
+          li.activity.activity-pen-collection.activity-type-social.activity-you
+            p.activity-sentence.wrap-text
+              a.activity-name
+                | Some User
+              span.activity-action added
+              |       your
+              | Pen
+              a.activity-name
+                | Some awesome pen
+              |   to the Collection
+              a.activity-thing
+                | Awesome collection
+              svg.icon-grid
+                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#grid')
+            time.activity-date
+              | 1 minute ago
+          //- Picked
+          li.activity.activity-pick.activity-type-social.activity-you
+            p.activity-sentence.wrap-text
+              a.activity-name
+                | Some User
+              span.activity-action picked
+              | your
+              | Pen
+              a.activity-thing
+                | Some awesome pen
+              svg.icon-star
+                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#star')
+            time.activity-date
+              | 5 days ago
+          //- Commented
+          li.activity.activity-comment.activity-type-social.activity-you
+            p.activity-sentence.wrap-text
+              a.activity-name
+                | Some User
+              span.activity-action commented
+              |       on
+              | your
+              | Pen
+              a.activity-thing
+                | Some awesome pen
+              svg.icon-comment
+                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#comment')
+            time.activity-date
+              | 1 month ago
+        a See All Activity →
+
+#header-search-form-wrap.header-search-form
+  form#search-form.search-form.group
+    #search-elements-div
+      .group
+        label.screen-reader-text(for='q') Search
+        input#q.search-input(type='search', name='q', required='true', value='', placeholder='Search')
+        input(type='hidden', name='limit', value='all')
+        input.button.search-button.visually-hidden(type='submit', value='Search')
+      #advanced-options.advanced-options.group.flex-grid(data-grid-type='fill')
+        .search-option.search-option-radio-row
+          div
+            input#type-pens(name='type', type='radio', value='type-pens', checked='')
+            label(for='type-pens') Pens
+          div
+            input#type-posts(name='type', type='radio', value='type-posts')
+            label(for='type-posts') Posts
+          div
+            input#type-collections(name='type', type='radio', value='type-collections')
+            label(for='type-collections') Collections
+          div
+            input#type-users(name='type', type='radio', value='type-users')
+            label(for='type-users') Users

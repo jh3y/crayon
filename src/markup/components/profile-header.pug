@@ -1,27 +1,42 @@
 header#profile-header.profile-header.group
   .profile-header-content
-    a#edit-profile-link.button.button-outline.edit-profile-link(href='/jh3y/settings/profile/')
+    a#edit-profile-link.button.button-outline.edit-profile-link
       | Edit Profile
     #profile-name.profile-name
       h1#profile-name-header
-        | jh3y
+        | Username
         span#profile-badges.profile-badges
+          a#profile-badge-pro.badge.badge-pro
+            | PRO
       #profile-username-area.profile-username-area
-        span#profile-username.profile-username @jh3y
+        span#profile-username.profile-username @username
+        span#profile-badge-follows.badge.badge-follows
+          | Follows You
 #links-and-stats.links-and-stats
   #profile-follow.profile-follow
-    a#profile-followers.follow-block(href='/jh3y/followers/')
-      strong#followers-count 23
+    a#profile-followers.follow-block
+      strong#followers-count 9999
       span Followers
-    a#profile-following.follow-block(href='/jh3y/following/')
-      strong#following-count 0
+    a#profile-following.follow-block
+      strong#following-count 9999
       span Following
-  img#profile-image.profile-avatar(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/605876/profile/profile-512_5.jpg', alt='User Avatar of jh3y')
+    a#follow-this-user.button.mini-button.button-outline.follow-user-button Follow
+    a#following-this-user.button.mini-button.button-outline.follow-user-button
+      svg.icon-check
+        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#check')
+      |     Following
+    a#following-this-user.button.mini-button.button-outline.follow-user-button.red
+      svg.icon-x
+        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#x')
+      |     Following
+
+
+  img#profile-image.profile-avatar()
   #profile-links.profile-links
-    a#profile-link-1(href='https://github.com/jh3y', target='_blank')
-      | github.com
-    a#profile-link-2(href='http://jh3y.github.io', target='_blank')
-      | jh3y.github.io
-    a#profile-link-3(href='https://twitter.com/@_jh3y', target='_blank')
-      | twitter.com
-    a#hire-me-button.button.button-outline.mini-button(href='#hireme', title='Click to send me a work inquiry.') Hire Me
+    a#profile-link-1
+      | Link 1
+    a#profile-link-2
+      | Link 2
+    a#profile-link-3
+      | Link 3
+    a#hire-me-button.button.button-outline.mini-button Hire Me
