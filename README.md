@@ -17,7 +17,12 @@ However, that's easier said than done. You'll need to explore the markup and wor
 This repo reduces the burden by allowing you to work with a local and generic version of a CodePen profile page. You're able to review your developed styling and get visual feedback in the browser with live reload goodness :smile: Once you're done, you can deploy the styling changes to CodePen from the command line using an automated "[POST to Prefill Editors](https://blog.codepen.io/documentation/api/prefill/)" setup.
 
 ## Usage
-The repo uses a `Makefile` to process the source and deploy styles to CodePen.
+The repo uses a self-documented `Makefile` to process the source and deploy styles to CodePen.
+
+To see all available tasks;
+```shell
+make
+```
 
 To get started;
 
