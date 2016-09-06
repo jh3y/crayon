@@ -47,7 +47,9 @@ This will create a new pen in your browser containing your styling. Once this pe
 Enjoy! :sunglasses:
 
 ## Examples
-* Your own styles?
+|Code                                    |Pen                               |Profile                |
+|----------------------------------------|----------------------------------|-----------------------|
+|https://github.com/jh3y/pencil-sharpener|https://codepen.io/jh3y/pen/KgwoNP|https://codepen.io/jh3y|
 
 ## Contributing
 Any issues or suggestions, feel free to open an issue or submit a PR. Alternatively, you can tweet me [@_jh3y](https://twitter.com/@_jh3y)
