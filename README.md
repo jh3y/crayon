@@ -17,12 +17,7 @@ However, that's easier said than done. You'll need to explore the markup and wor
 This repo reduces the burden by allowing you to work with a local and generic version of a CodePen profile page. You're able to review your developed styling and get visual feedback in the browser with live reload goodness :smile: Once you're done, you can deploy the styling changes to CodePen from the command line using an automated "[POST to Prefill Editors](https://blog.codepen.io/documentation/api/prefill/)" setup.
 
 ## Usage
-The repo uses a self-documented `Makefile` to process the source and deploy styles to CodePen.
-
-To see all available tasks;
-```shell
-make
-```
+The repo uses a `Makefile` to process the source and deploy styles to CodePen.
 
 To get started;
 
@@ -42,14 +37,16 @@ Once you're happy with your styles, you can deploy them.
 ```shell
 make deploy
 ```
+
+__NOTE::__ _For deployment to work seamlessly, it is assumed you are on OSX and your default application for handling `.html` files is a browser and not an editor. If this is not the case, simply open `tmp/deploy-template.html` in the browser of your choice._
+
+
 This will create a new pen in your browser containing your styling. Once this pen is saved, all that is left to do is linking it to your profile at `https://codepen.io/<YOUR USERNAME>/settings/customize`.
 
 Enjoy! :sunglasses:
 
 ## Examples
-|Code                                    |Pen                               |Profile                |
-|----------------------------------------|----------------------------------|-----------------------|
-|https://github.com/jh3y/pencil-sharpener|https://codepen.io/jh3y/pen/KgwoNP|https://codepen.io/jh3y|
+* Your own styles?
 
 ## Contributing
 Any issues or suggestions, feel free to open an issue or submit a PR. Alternatively, you can tweet me [@_jh3y](https://twitter.com/@_jh3y)
