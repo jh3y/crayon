@@ -8,7 +8,7 @@ Did you know that you can style your CodePen profile? You can!
 It's __simple__. In your profile settings, you can apply the CSS from any pen to your profile by providing the URL in the options within "Settings > Customize".
 
 ```shell
-https://codepen.io/<YOUR USERNAME>/settings/customize
+https://codepen.io/you/settings/customize
 ```
 
 However, that's easier said than done. You'll need to explore the markup and work out the styles you want to overwrite. This in addition to working on the styling pen whilst constantly refreshing your profile page to review the changes :confounded: :sleeping:
