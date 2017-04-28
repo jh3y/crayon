@@ -41,7 +41,7 @@ make deploy
 __NOTE::__ _For deployment to work seamlessly, it is assumed you are on OSX and your default application for handling `.html` files is a browser and not an editor. If this is not the case, simply open `tmp/deploy-template.html` in the browser of your choice._
 
 
-This will create a new pen in your browser containing your styling. Once this pen is saved, all that is left to do is linking it to your profile at `https://codepen.io/<YOUR USERNAME>/settings/customize`.
+This will create a new pen in your browser containing your styling. Once this pen is saved, all that is left to do is linking it to your profile at https://codepen.io/you/settings/customize.
 
 Enjoy! :sunglasses:
 
