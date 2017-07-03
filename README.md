@@ -8,7 +8,7 @@ Did you know that you can style your CodePen profile? You can!
 It's __simple__. In your profile settings, you can apply the CSS from any pen to your profile by providing the URL in the options within "Settings > Customize".
 
 ```shell
-https://codepen.io/<YOUR USERNAME>/settings/customize
+https://codepen.io/you/settings/customize
 ```
 
 However, that's easier said than done. You'll need to explore the markup and work out the styles you want to overwrite. This in addition to working on the styling pen whilst constantly refreshing your profile page to review the changes :confounded: :sleeping:
@@ -41,7 +41,7 @@ make deploy
 __NOTE::__ _For deployment to work seamlessly, it is assumed you are on OSX and your default application for handling `.html` files is a browser and not an editor. If this is not the case, simply open `tmp/deploy-template.html` in the browser of your choice._
 
 
-This will create a new pen in your browser containing your styling. Once this pen is saved, all that is left to do is linking it to your profile at `https://codepen.io/<YOUR USERNAME>/settings/customize`.
+This will create a new pen in your browser containing your styling. Once this pen is saved, all that is left to do is linking it to your profile at https://codepen.io/you/settings/customize.
 
 Enjoy! :sunglasses:
 
